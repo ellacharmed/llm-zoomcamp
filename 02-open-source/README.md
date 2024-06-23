@@ -36,9 +36,6 @@ Links:
 * https://github.com/DataTalksClub/llm-zoomcamp-saturncloud
 
 
-
-
-
 ## 2.3 FLAN-T5
 
 <a href="https://www.youtube.com/watch?v=a86iTyxnFE4&list=PL3MmuxUbc_hIB4fSqLy_0AfTjVLpgjV3R">
@@ -52,9 +49,6 @@ Links:
 import os
 os.environ['HF_HOME'] = '/run/cache/'
 ```
-
-
-
 
 Links:
 
@@ -105,15 +99,27 @@ Links:
 
 ## 2.6 Other models
 
+<a href="https://www.youtube.com/watch?v=GzPV_HTmCkc&list=PL3MmuxUbc_hIB4fSqLy_0AfTjVLpgjV3R">
+  <img src="https://markdown-videos-api.jorgenkh.no/youtube/GzPV_HTmCkc">
+</a>
 
-* `LLM360/Amber`
-* ``
+* [`LLM360/Amber`](https://huggingface.co/LLM360/Amber)
+* [Gemma-7B](https://huggingface.co/blog/gemma)
+* [SaulLM-7B](https://huggingface.co/papers/2403.03883) 
+* [Granite-7B](https://huggingface.co/ibm-granite/granite-7b-base)
+* [MPT-7B](https://huggingface.co/mosaicml/mpt-7b)
+* [OpenLLaMA-7B](https://huggingface.co/openlm-research/open_llama_7b)
 
 Where to find them:
 
 * Leaderboards 
 * Google
 * ChatGPT
+
+Links:
+
+* https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard
+* https://huggingface.co/spaces/optimum/llm-perf-leaderboard
 
 
 ## 2.7 Ollama - Running LLMs on a CPU
@@ -122,11 +128,8 @@ Where to find them:
   <img src="https://markdown-videos-api.jorgenkh.no/youtube/PVpBGs_iSjY">
 </a>
 
-
 * The easiest way to run an LLM without a GPU is using [Ollama](https://github.com/ollama/ollama)
 * Notebook [ollama.ipynb](ollama.ipynb)
-
-
 
 For Linux:
 
