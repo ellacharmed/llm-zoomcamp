@@ -1,0 +1,21 @@
+# Micromamba environment file
+# https://marketplace.visualstudio.com/items?itemName=corker.vscode-micromamba
+
+name: llmz
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.11,<3.12
+  - tqdm>=4.66.4,<4.67
+  - notebook==7.1.2
+  - ipywidgets
+  - openai>=1.34.0,<1.35
+  - elasticsearch>=8.14.0,<8.15
+  - pandas>=2.2.2,<2.3
+  - scikit-learn>=1.5.0,<1.6
+  - groq>=0.9.0,<0.10
+  - python-dotenv
+  - transformers
+  - pytorch
+  - tiktoken
+  

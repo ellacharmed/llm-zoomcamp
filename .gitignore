@@ -1,2 +1,11 @@
 .ipynb_checkpoints/
 __pycache__/
+.env
+.envrc
+
+
+# pixi environments
+.pixi
+*.egg-info
+
+

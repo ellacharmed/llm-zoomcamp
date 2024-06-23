@@ -18,11 +18,40 @@ What we will do:
   <img src="https://markdown-videos-api.jorgenkh.no/youtube/Q75JgLEXMsM">
 </a>
 
-* LLM
-* RAG
-* RAG architecture
-* Course outcome
+* LLM: Large Language Model
+  - a model that predicts the next word/token based on the previous entered word/token
+  - eg: text sms now can pop up the next most common word one uses ie "how ... {are}" The "are" is intuited from historical data of your own and others' texts
+  - intuits some form of "intelligence" for the text inference
+  - theory not covered
+  - treated as black-boxes, we won't go into the transformers
+  - for internals of LLMs, use other resources
+    ```mermaid
+    flowchart LR
+      A[prompt] --> B(LLM) --> C[Answer]
+    ```
+  - a prompt can consists of question and context, the LLM model than provides the 'answer'
+  ```mermaid
+  sequenceDiagram
+    Prompt->>+Model: Qn - how do I enroll in the course?
+    Prompt->>+Model: Context - in dezoomcamp
+    Model-->>-Prompt: ...'thinking'
+    Model-->>-Prompt: model find next logical term
+  ```
 
+* RAG: Retrieval Augmented Generation
+  - retrieval = search
+  - generation = LLM
+  - GPTs don't have context-specific answers to questions about zoomcamps; unless we explicitly tell it to use a search first
+* RAG architecture
+  - basic framework:
+    ```mermaid
+    flowchart LR
+      A[user] --> B(KB) --> C({)Context)
+      C[Context] --> D[LLM]
+      D[LLM] --> A[user]
+    ``` 
+* Course outcome
+  - goal is to implement this basic framework and deploy to a Streamlit UI
 
 ## 1.2 Preparing the Environment
 
