@@ -29,11 +29,11 @@ What we will do:
     flowchart LR
       A[prompt] --> B(LLM) --> C[Answer]
     ```
-  - a prompt can consists of question and context, the LLM model than provides the 'answer'
+  - a prompt can consists of question and context, the LLM model than provides the 'answer' by stringing the 'terms' together as a sentence.
   ```mermaid
   sequenceDiagram
     Prompt->>+Model: Qn - how do I enroll in the course?
-    Prompt->>+Model: Context - in dezoomcamp
+    Prompt->>+Model: Context - in 'data-engineering-zoomcamp' course only
     Model-->>-Prompt: ...'thinking'
     Model-->>-Prompt: model find next logical term
   ```
@@ -46,9 +46,9 @@ What we will do:
   - basic framework:
     ```mermaid
     flowchart LR
-      A[user] --> B(KB) --> C({)Context)
+      A[user] --> B(KB) --> C[Context]
       C[Context] --> D[LLM]
-      D[LLM] --> A[user]
+      D[LLM] --> |answer| A[user]
     ``` 
 * Course outcome
   - goal is to implement this basic framework and deploy to a Streamlit UI
