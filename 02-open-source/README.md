@@ -137,7 +137,8 @@ For Linux:
 curl -fsSL https://ollama.com/install.sh | sh
 
 ollama start
-ollama serve phi3
+ollama pull phi3
+ollama run phi3
 ```
 
 [Prompt example](prompt.md)
@@ -180,6 +181,7 @@ ollama pull phi3
 * Creating a Docker-Compose file 
 * Re-running the module 1 notebook
 
+* Notebook: [rag-intro.ipynb](rag-intro.ipynb)
 
 ## 2.9 UI for RAG
 
@@ -197,4 +199,5 @@ from [our repository with projects of the week](https://github.com/DataTalksClub
 # Notes
 
 * [Workaround by Pham Nguyen Hung to use ElasticSearch container with Saturn Cloud & Google Colab instead of minsearch](https://hung.bearblog.dev/llm-zoomcamp-zrok/)
+* [Notes by slavaheroes](https://github.com/slavaheroes/llm-zoomcamp/blob/homeworks/02-open-source/notes.md)
 * Did you take notes? Add them above this line (Send a PR with *links* to your notes)
