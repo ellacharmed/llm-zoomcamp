@@ -8,4 +8,4 @@ __pycache__/
 .pixi
 *.egg-info
 
-
+**/ollama_files
