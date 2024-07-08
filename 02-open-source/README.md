@@ -35,6 +35,10 @@ Links:
 * https://saturncloud.io/
 * https://github.com/DataTalksClub/llm-zoomcamp-saturncloud
 
+Google Colab as an alternative:
+
+* [Video](https://www.loom.com/share/591f39e4e231486bbfc3fbd316ec03c5)
+* [Notebook](https://colab.research.google.com/drive/1XmxUZutZXoAEdQZU45EXWPseBX9s2NRd)
 
 ## 2.3 FLAN-T5
 
@@ -196,8 +200,15 @@ If you want to learn more about streamlit, you can
 use [this material](https://github.com/DataTalksClub/project-of-the-week/blob/main/2022-08-14-frontend.md)
 from [our repository with projects of the week](https://github.com/DataTalksClub/project-of-the-week/tree/main).
 
+## Homework
+
+See [here](../cohorts/2024/02-open-source/homework.md)
+
 # Notes
 
 * [Workaround by Pham Nguyen Hung to use ElasticSearch container with Saturn Cloud & Google Colab instead of minsearch](https://hung.bearblog.dev/llm-zoomcamp-zrok/)
 * [Notes by slavaheroes](https://github.com/slavaheroes/llm-zoomcamp/blob/homeworks/02-open-source/notes.md)
+* [Notes by Pham Nguyen Hung](https://hung.bearblog.dev/llm-zoomcamp-2-os/)
+* [Notes by Marat on Open-Sourced and Closed-Sourced Models and ways to run them](https://machine-mind-ml.medium.com/open-sourced-vs-closed-sourced-llms-2392c7db6e10)
+* [Notes by dimzachar](https://github.com/dimzachar/llm_zoomcamp/blob/master/notes/02-open-source/README.md)
 * Did you take notes? Add them above this line (Send a PR with *links* to your notes)
