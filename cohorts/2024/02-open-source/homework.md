@@ -35,8 +35,7 @@ ollama pull gemma:2b
 
 In docker, it saved the results into `/root/.ollama`
 
-We're interested in the metadata about this model. You can find
-it in `models/manifests/registry.ollama.ai/library`
+We're interested in the metadata about this model. You can find it in `models/manifests/registry.ollama.ai/library`
 
 What's the content of the file related to gemma?
 
@@ -46,14 +45,11 @@ Test the following prompt: "10 * 10". What's the answer?
 
 ## Q4. Donwloading the weights 
 
-We don't want to pull the weights every time we run
-a docker container. Let's do it once and have them available
-every time we start a container.
+We don't want to pull the weights every time we run a docker container. Let's do it once and have them available every time we start a container.
 
 First, we will need to change how we run the container.
 
-Instead of mapping the `/root/.ollama` folder to a named volume,
-let's map it to a local directory:
+Instead of mapping the `/root/.ollama` folder to a named volume, let's map it to a local directory:
 
 ```bash
 mkdir ollama_files
@@ -83,8 +79,7 @@ Hint: on linux, you can use `du -h` for that.
 
 ## Q5. Adding the weights 
 
-Let's now stop the container and add the weights 
-to a new image
+Let's now stop the container and add the weights to a new image
 
 For that, let's create a `Dockerfile`:
 
